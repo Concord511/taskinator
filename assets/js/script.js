@@ -203,7 +203,6 @@ var loadTasks = function() {
     
     for (var i = 0; i < savedTasks.length; i++) {
         var listItemEl = createTaskEl(savedTasks[i]);
-        console.log(listItemEl);
         if (savedTasks[i].status === "to do") {
             listItemEl.querySelector("select[name='status-change']").selectedIndex = 0;
             tasksToDoEl.appendChild(listItemEl);
